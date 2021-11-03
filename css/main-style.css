@@ -6,9 +6,24 @@
     --white-color: #f8f7f1;
 }
 
-/* Default styling */
+/* font styling */
 h1, h2, h3, h4{
     color: var(--secondary-color);
+}
+
+h1, .app-name {
+    font-size: 2em;
+}
+
+/* button styling */
+.btn {
+    color: var(--secondary-color);
+    outline: var(--dark-color);
+}
+
+.btn:hover {
+    color: var(--white-color);
+    background-color: var(--dark-color);
 }
 
 /* navbar Styling having to overide bootstrap */
@@ -16,16 +31,46 @@ nav {
     background-color: var(--dark-color);
 }
 
+nav img {
+    width: 30px;
+    height: 28px;
+}
+
 /* body styling */
 body {
     color: var(--dark-color);
 }
 
-/* Convert this to an external style sheet */
+/* Container styling */
 main>.container {
     padding: 60px 15px 0;
     margin-bottom: 5rem;
 }
+
+/* Main Body Styling */
+
+.app-logo img {
+    width: 350px;
+    height: 350px;
+}
+
+/* Tech Icons styling */
+#html-icon {
+    color: #FF5733;
+}
+
+#css-icon {
+    color: #2965f1;
+}
+
+#js-icon {
+    color: #f0db4f;
+}
+
+#bootstrap-icon {
+    color: #563d7c;
+}
+
 .sticky-footer {
     position: sticky;
     left: 0;
