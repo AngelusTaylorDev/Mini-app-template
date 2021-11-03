@@ -1,0 +1,55 @@
+/* Root Colors */
+:root{
+    --primary-color: #5A1B02;
+    --secondary-color: #EEBA0B;
+    --dark-color: #2C1604;
+    --white-color: #f8f7f1;
+}
+
+/* Default styling */
+h1, h2, h3, h4{
+    color: var(--secondary-color);
+}
+
+/* navbar Styling having to overide bootstrap */
+nav { 
+    background-color: var(--dark-color);
+}
+
+/* body styling */
+body {
+    color: var(--dark-color);
+}
+
+/* Convert this to an external style sheet */
+main>.container {
+    padding: 60px 15px 0;
+    margin-bottom: 5rem;
+}
+.sticky-footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* footer styling */
+footer {
+    color: var(--white-color);
+    background-color: var(--dark-color);
+}
+
+footer, img {
+    width: 180px;
+}
+
+footer .social>a {
+    color: var(--white-color);
+    opacity: 0.7;
+}
+
+footer .social>a:hover {
+    color: var(--secondary-color);
+    opacity: 0.9;
+}
+
