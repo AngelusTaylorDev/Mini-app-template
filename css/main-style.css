@@ -15,6 +15,14 @@ h1, .app-name {
     font-size: 2em;
 }
 
+a {
+    color: var(--secondary-color);
+}
+
+a:hover {
+    color: var(--dark-color);
+}
+
 /* button styling */
 .btn {
     color: var(--secondary-color);
@@ -71,6 +79,19 @@ main>.container {
     color: #563d7c;
 }
 
+.fa-check-square {
+    color: var(--secondary-color);
+}
+
+
+/* Prism custom JS */
+code[class*="language-"], pre[class*="language-"] {
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/* footer styling */
 .sticky-footer {
     position: sticky;
     left: 0;
@@ -78,7 +99,6 @@ main>.container {
     width: 100%;
 }
 
-/* footer styling */
 footer {
     color: var(--white-color);
     background-color: var(--dark-color);
