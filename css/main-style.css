@@ -6,18 +6,31 @@
     --white-color: #f8f7f1;
 }
 
-/* font styling */
-h1, h2, h3{
+* font styling */
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+h1,
+h2,
+h3 {
     color: var(--secondary-color);
     font-family: 'IM Fell Great Primer SC', serif;
 }
 
-h1, .app-name {
+h1,
+.app-name {
     font-size: 2.5em;
 }
 
 h4 {
     color: var(--dark-color);
+    font-family: 'Gideon Roman', cursive;
+    font-weight: 800;
+}
+
+h5 {
+    color: var(--light-color);
     font-family: 'Gideon Roman', cursive;
 }
 
@@ -37,17 +50,39 @@ a:hover {
 /* button styling */
 .btn {
     color: var(--secondary-color);
-    outline: var(--dark-color);
+    background-color: var(--dark-color);
 }
 
 .btn:hover {
-    color: var(--white-color);
-    background-color: var(--dark-color);
+    color: var(--dark-color);
+    background-color: var(--secondary-color);
+    font-weight: 500;
 }
 
 /* navbar Styling having to overide bootstrap */
-nav { 
+#app-name-icon {
+    color: var(--white-color);
+}
+
+nav {
     background-color: var(--dark-color);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--secondary-color);
+}
+
+.navbar-dark li a {
+    font-size: 1.2rem;
 }
 
 nav img {
@@ -69,8 +104,7 @@ main>.container {
 /* Main Body Styling */
 
 .app-logo img {
-    width: 600px;
-    height: 350px;
+    width: 85%;
 }
 
 .inBolden {
@@ -98,9 +132,14 @@ main>.container {
     color: var(--secondary-color);
 }
 
+.lead {
+    font-size: 1em;
+}
+
 
 /* Prism custom JS */
-code[class*="language-"], pre[class*="language-"] {
+code[class*="language-"],
+pre[class*="language-"] {
     white-space: pre-wrap;
     word-break: break-all;
     word-wrap: break-word;
@@ -119,7 +158,12 @@ footer {
     background-color: var(--dark-color);
 }
 
-footer, img {
+.email {
+    font-size: 1rem;
+}
+
+footer,
+img {
     width: 180px;
 }
 
@@ -132,4 +176,3 @@ footer .social>a:hover {
     color: var(--secondary-color);
     opacity: 0.9;
 }
-
